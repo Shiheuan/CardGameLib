@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace CardLib
 {
-    public class Cards: CollectionBase
+    public class Cards: CollectionBase, ICloneable
     {
         public void Add(Card newCard)
         {
@@ -32,5 +32,14 @@ namespace CardLib
         }
         public bool Contains(Card card) => InnerList.Contains(card);
 
+        public object Clone()
+        {
+            Cards clonedCards = new Cards();
+            foreach (Card sourceCard in List)
+            {
+                clonedCards.Add(sourceCard);
+            }
+            return clonedCards;
+        }
     }
 }

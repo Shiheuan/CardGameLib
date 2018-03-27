@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CardLib
 {
-    public class Deck
+    public class Deck : ICloneable
     {
         // private Card[] cards;
         private Cards cards = new Cards();
@@ -22,7 +22,7 @@ namespace CardLib
                 }
             }
         }
-
+        
         private Deck(Cards newCards)
         {
             cards = newCards;
@@ -30,7 +30,7 @@ namespace CardLib
 
         public Card GetCard(int cardNum)
         {
-            if (cardNum >= 0 && cardNum <= CardsNum-1)
+            if (cardNum >= 0 && cardNum <= CardsNum - 1)
             {
                 return cards[cardNum];
             }
@@ -63,6 +63,12 @@ namespace CardLib
                 newDeck.Add(cards[deskCard]);
             }
             newDeck.CopyTo(cards);
+        }
+
+        public object Clone()
+        {
+            Deck clonedDeck = new Deck((Cards)cards.Clone());
+            return clonedDeck;
         }
     }
 }
