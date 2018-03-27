@@ -3,3 +3,8 @@ X:\pro\CardLib\CardLib\bin\Debug\CardLib.pdb
 X:\pro\CardLib\CardLib\obj\Debug\CardLib.csprojResolveAssemblyReference.cache
 X:\pro\CardLib\CardLib\obj\Debug\CardLib.dll
 X:\pro\CardLib\CardLib\obj\Debug\CardLib.pdb
+X:\gitdir\CardLib\CardLib\obj\Debug\CardLib.csprojResolveAssemblyReference.cache
+X:\gitdir\CardLib\CardLib\obj\Debug\CardLib.dll
+X:\gitdir\CardLib\CardLib\obj\Debug\CardLib.pdb
+X:\gitdir\CardLib\CardLib\bin\Debug\CardLib.dll
+X:\gitdir\CardLib\CardLib\bin\Debug\CardLib.pdb

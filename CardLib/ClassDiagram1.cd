@@ -17,9 +17,6 @@
       <HashCode>AAAAAAAAAAAAAAAAgAgAAAAAQAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="cards" />
-    </ShowAsAssociation>
   </Class>
   <Enum Name="CardLib.Suit">
     <Position X="7" Y="4.5" Width="1.5" />

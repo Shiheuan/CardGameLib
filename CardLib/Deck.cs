@@ -7,18 +7,25 @@ namespace CardLib
 {
     public class Deck
     {
-        private Card[] cards;
+        // private Card[] cards;
+        private Cards cards = new Cards();
         public const int CardsNum = 52;
         public Deck()
         {
-            cards = new Card[CardsNum];
+            // cards = new Card[CardsNum];
             for (int suitVal = 0; suitVal < 4; suitVal++)
             {
                 for (int rankVal = 1; rankVal < 14; rankVal++)
                 {
-                    cards[13 * suitVal + rankVal - 1] = new Card((Suit)suitVal, (Rank)rankVal);
+                    // cards[13 * suitVal + rankVal - 1] = new Card((Suit)suitVal, (Rank)rankVal);
+                    cards.Add(new Card((Suit)suitVal, (Rank)rankVal));
                 }
             }
+        }
+
+        private Deck(Cards newCards)
+        {
+            cards = newCards;
         }
 
         public Card GetCard(int cardNum)
@@ -35,7 +42,8 @@ namespace CardLib
 
         public void Shuffle()
         {
-            Card[] newDeck = new Card[CardsNum];
+            //Card[] newDeck = new Card[CardsNum];
+            Cards newDeck = new Cards();
             bool[] assigned = new bool[CardsNum];
             Random sourceGen = new Random();
             for (int i = 0; i < CardsNum; i++)
@@ -51,9 +59,10 @@ namespace CardLib
                     }
                 }
                 assigned[deskCard] = true;
-                newDeck[deskCard] = cards[i];
+                //newDeck[deskCard] = cards[i];
+                newDeck.Add(cards[deskCard]);
             }
-            newDeck.CopyTo(cards, 0);
+            newDeck.CopyTo(cards);
         }
     }
 }

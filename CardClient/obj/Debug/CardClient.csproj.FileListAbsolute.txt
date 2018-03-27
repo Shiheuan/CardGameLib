@@ -6,3 +6,11 @@ X:\pro\CardLib\CardClient\bin\Debug\CardLib.pdb
 X:\pro\CardLib\CardClient\obj\Debug\CardClient.csprojResolveAssemblyReference.cache
 X:\pro\CardLib\CardClient\obj\Debug\CardClient.exe
 X:\pro\CardLib\CardClient\obj\Debug\CardClient.pdb
+X:\gitdir\CardLib\CardClient\bin\Debug\CardClient.exe.config
+X:\gitdir\CardLib\CardClient\obj\Debug\CardClient.exe
+X:\gitdir\CardLib\CardClient\obj\Debug\CardClient.pdb
+X:\gitdir\CardLib\CardClient\bin\Debug\CardClient.exe
+X:\gitdir\CardLib\CardClient\bin\Debug\CardClient.pdb
+X:\gitdir\CardLib\CardClient\bin\Debug\CardLib.dll
+X:\gitdir\CardLib\CardClient\bin\Debug\CardLib.pdb
+X:\gitdir\CardLib\CardClient\obj\Debug\CardClient.csprojResolveAssemblyReference.cache
