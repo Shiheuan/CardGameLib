@@ -22,7 +22,27 @@ namespace CardLib
                 }
             }
         }
-        
+
+        // rules in this Deck
+        public Deck(bool isAceHigh): this()
+        {
+            Card.isAceHigh = isAceHigh;
+        }
+
+        public Deck(bool useTrumps, Suit trump): this()
+        {
+            Card.useTrumps = useTrumps;
+            Card.trump = trump;
+        }
+
+        public Deck(bool isAceHigh, bool useTrumps, Suit trump) : this()
+        {
+            Card.isAceHigh = isAceHigh;
+            Card.useTrumps = useTrumps;
+            Card.trump = trump;
+        }
+        // rules in this Deck <end>
+
         private Deck(Cards newCards)
         {
             cards = newCards;
