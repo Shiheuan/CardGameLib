@@ -7,22 +7,8 @@ using System.Collections;
 
 namespace CardLib
 {
-    public class Cards: CollectionBase, ICloneable
+    public class Cards: List<Card>, ICloneable
     {
-        public void Add(Card newCard)
-        {
-            List.Add(newCard);
-        }
-        public void Remove(Card oldCard)
-        {
-            List.Remove(oldCard);
-        }
-        public Card this[int cardIndex]
-        {
-            get { return (Card)List[cardIndex]; }
-            set { List[cardIndex] = value; }
-        }
-
         public void CopyTo(Cards targetCards)
         {
             for (int index = 0; index < this.Count; index++)
@@ -30,12 +16,11 @@ namespace CardLib
                 targetCards[index] = this[index];
             }
         }
-        public bool Contains(Card card) => InnerList.Contains(card);
 
         public object Clone()
         {
             Cards clonedCards = new Cards();
-            foreach (Card sourceCard in List)
+            foreach (Card sourceCard in this)
             {
                 clonedCards.Add(sourceCard);
             }
