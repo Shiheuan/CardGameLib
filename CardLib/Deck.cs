@@ -56,7 +56,8 @@ namespace CardLib
             }
             else
             {
-                throw (new System.ArgumentOutOfRangeException("cardNum", cardNum, "Value must be between 0 to 51."));
+                //throw (new System.ArgumentOutOfRangeException("cardNum", cardNum, "Value must be between 0 to 51."));
+                throw new CardOutOfRangeException(cards.Clone() as Cards);
             }
         }
 
