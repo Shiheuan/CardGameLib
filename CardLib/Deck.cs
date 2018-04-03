@@ -8,6 +8,7 @@ namespace CardLib
     public class Deck : ICloneable
     {
         // private Card[] cards;
+        public event EventHandler LastCardDrawn;
         private Cards cards = new Cards();
         public const int CardsNum = 52;
         public Deck()
@@ -52,6 +53,10 @@ namespace CardLib
         {
             if (cardNum >= 0 && cardNum <= CardsNum - 1)
             {
+                if (cardNum == CardsNum - 1 && LastCardDrawn != null) 
+                {
+                    LastCardDrawn(this, EventArgs.Empty);
+                }
                 return cards[cardNum];
             }
             else
