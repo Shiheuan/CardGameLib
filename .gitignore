@@ -1,0 +1,10 @@
+CardLib/obj/
+CardLib/bin/
+*.csproj
+CardClient/obj/
+CardClient/bin/
+
+.vs/
+*.sln
+*.suo
+
