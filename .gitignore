@@ -8,3 +8,5 @@ CardClient/bin/
 *.sln
 *.suo
 
+*.force
+
